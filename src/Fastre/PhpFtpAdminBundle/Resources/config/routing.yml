@@ -1,0 +1,16 @@
+account_new:
+  pattern: /account/new
+  defaults: {_controller: FastrePhpFtpAdminBundle:Accounts:new}
+  
+account_list:
+    pattern:  /
+    defaults: { _controller: FastrePhpFtpAdminBundle:Default:index }
+    
+account_view:
+    pattern: /account/view/{id}
+    defaults: {_controller: FastrePhpFtpAdminBundle:Accounts:view }
+    
+    
+account_create:
+    pattern: /account/create
+    defaults: {_controller: FastrePhpFtpAdminBundle:Accounts:create }

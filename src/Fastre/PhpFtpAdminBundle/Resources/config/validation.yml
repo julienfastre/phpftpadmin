@@ -1,0 +1,9 @@
+Fastre\PhpFtpAdminBundle\Entity\Account:
+    properties:
+        username:
+            - Regex: {pattern: "/[a-zA-Z0-9]+/", message: Le nom d'utilisateur ne peut contenir que des lettres minuscules et majuscules et des chiffres.}
+        pass: 
+            - Length: {min: 8, minMessage: "Your name must have at least {{ limit }} characters."} 
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: {fields: [username], groups: [registration]}
+        

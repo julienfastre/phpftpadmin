@@ -1,0 +1,7 @@
+fastre_php_ftp_admin:
+    resource: "@FastrePhpFtpAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+_welcome:
+    pattern:  /
+    defaults: { _controller: FastrePhpFtpAdminBundle:Default:index }

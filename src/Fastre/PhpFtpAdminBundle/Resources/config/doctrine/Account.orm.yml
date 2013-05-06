@@ -1,0 +1,14 @@
+Fastre\PhpFtpAdminBundle\Entity\Account:
+  type: entity
+  table: accounts
+  id:
+    id:
+      type: integer
+      generator: {strategy: AUTO}
+  fields:
+    username:
+      type: string
+      length: 30
+    pass:
+      type: string
+      length: 50

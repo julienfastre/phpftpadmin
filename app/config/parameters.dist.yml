@@ -1,0 +1,22 @@
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     127.0.0.1
+    database_port:     ~
+    database_name:     symfony
+    database_user:     root
+    database_password: ~
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            en
+    secret:            ThisTokenIsNotSoSecretChangeIt
+    
+    admin_password: admin
+#the path where ftp directory is located. The bundle will create subfolder according
+#to the username
+    path_folder:  /var/ftp/path_folder
+#a subfolder to create inside the username's subfolder
+    inside_path: www 

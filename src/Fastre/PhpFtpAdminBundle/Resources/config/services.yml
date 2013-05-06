@@ -1,0 +1,15 @@
+parameters:
+#    fastre_php_ftp_admin.example.class: Fastre\PhpFtpAdminBundle\Example
+
+services:
+#    fastre_php_ftp_admin.example:
+#        class: %fastre_php_ftp_admin.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+    fastre.php_ftp_admin.account_creation_listener:
+        class: Fastre\PhpFtpAdminBundle\Services\Listener\CreateAccountListener
+        arguments:
+          path: %path_folder%
+          inside_folder: %inside_path%
+        tags:
+            - { name: doctrine.event_listener, event: postPersist }
