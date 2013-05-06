@@ -66,7 +66,7 @@ class Account
      */
     public function setPass($pass)
     {
-        $this->pass = sha1($pass);
+        $this->pass = crypt($pass);
     
         return $this;
     }
