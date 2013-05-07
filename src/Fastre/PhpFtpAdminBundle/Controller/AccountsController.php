@@ -54,7 +54,7 @@ class AccountsController  extends Controller {
             $account = $form->getData();
             
             $errors = $this->get('validator')
-                    ->validate($account, array('Default', 'registration'));
+                    ->validate($account, array('registration'));
             
             
             
@@ -109,7 +109,7 @@ class AccountsController  extends Controller {
             
             
             
-            $errors = $this->get('validator')->validate($data, array('Default'));
+            $errors = $this->get('validator')->validate($data, array('update'));
             
             //throw new \Exception($errors->count());
             
